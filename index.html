@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>UltraChaves - Chaveiro 24h</title>
+  <style>
+    :root{
+      --bg:#000000;
+      --gold1:#d4af37;
+      --gold2:#f3d36b;
+      --accent:linear-gradient(90deg,var(--gold1),var(--gold2));
+      --card-bg:rgba(255,255,255,0.03);
+      --glass: rgba(255,255,255,0.04);
+      --maxw:1100px;
+      --brand-font: 'Trebuchet MS', Arial, sans-serif;
+    }
+    html,body{height:100%;}
+    body{
+      margin:0;
+      font-family:var(--brand-font);
+      background:var(--bg);
+      color:#fff;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.4;
+    }
+    .container{max-width:var(--maxw);margin:0 auto;padding:28px;}
+
+    /* Header */
+    header{
+      display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0;
+    }
+    .logo{
+      display:flex;gap:16px;align-items:center;
+    }
+    .logo .mark{
+      width:78px;height:78px;border-radius:10px;display:flex;align-items:center;justify-content:center;
+      background:linear-gradient(180deg,#fff3c6 0%, #f9e6a0 30%, #d4af37 100%);
+      box-shadow:0 6px 18px rgba(0,0,0,0.6);
+      color:#111;font-weight:800;font-size:26px
+    }
+    .brand{
+      font-size:28px;font-weight:800;background: -webkit-linear-gradient(#fff,#d4af37 60%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; 
+    }
+    .sub{font-size:12px;color:#d3c58a;margin-top:4px}
+
+    /* Hero */
+    .hero{
+      display:grid;grid-template-columns:1fr 420px;gap:24px;align-items:center;padding:28px 0 34px;border-bottom:1px solid rgba(255,255,255,0.04);
+    }
+    .hero-left{
+      padding-right:12px;
+    }
+    .kicker{font-size:14px;color:#d3c58a;font-weight:700;letter-spacing:1px}
+    h1{font-size:48px;margin:6px 0 12px;line-height:1}
+    h1 .gold{background:var(--accent);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-weight:900}
+    p.lead{color:#e6d89e;margin:0 0 18px;font-size:18px}
+
+    .cta{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:700}
+    .btn-primary{background:linear-gradient(90deg,#1bd741,#12a12f);color:#051205}
+    .btn-wp{background:transparent;border:2px solid rgba(212,175,55,0.18);color:var(--gold1)}
+
+    /* Right column - card */
+    .card{background:var(--card-bg);padding:18px;border-radius:14px;text-align:center}
+    .card img{max-width:100%;height:auto;border-radius:8px}
+
+    /* Services */
+    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin:28px 0}
+    .service{background:var(--glass);padding:18px;border-radius:12px}
+    .service h3{margin:0 0 8px;color:var(--gold2)}
+    .service p{margin:0;color:#ddd;font-size:14px}
+
+    /* Contact */
+    .contact{display:flex;align-items:center;gap:18px;margin:18px 0}
+    .phone{font-size:32px;font-weight:900;background:var(--accent);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+    .contact-icons{display:flex;gap:12px;align-items:center}
+    .pill{background:rgba(212,175,55,0.12);padding:10px 14px;border-radius:999px;color:var(--gold1);font-weight:700}
+
+    /* Address */
+    .address{margin-top:10px;color:#dcd0a8;font-weight:700}
+
+    /* Footer */
+    footer{margin-top:34px;padding:22px 0;border-top:1px solid rgba(255,255,255,0.03);color:#bfb08a;font-size:14px}
+
+    @media(max-width:880px){
+      .hero{grid-template-columns:1fr;}
+      h1{font-size:36px}
+      .phone{font-size:24px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <div class="mark">🔑</div>
+        <div>
+          <div class="brand">ULTRA<span style="font-weight:600">CHAVES</span></div>
+          <div class="sub">Chaveiro 24 Horas — Cópia de chaves, tags, baterias</div>
+        </div>
+      </div>
+      <div style="text-align:right">
+        <div style="font-weight:800;color:var(--gold2)">Contato</div>
+        <div style="margin-top:6px"><a href="https://wa.me/5561986017644" class="pill">WhatsApp (61) 98601-7644</a></div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-left">
+        <div class="kicker">ABERTO 24 HORAS</div>
+        <h1><span class="gold">CÓPIA DE CHAVES</span> e <span class="gold">TAGS</span></h1>
+        <p class="lead">Baterias para relógios, controles remotos de carros e alarmes. Atendimento rápido, profissional e parcelamento por cartão.</p>
+
+        <div class="cta">
+          <a class="btn btn-primary" href="tel:+5561986017644">📞 Ligar agora</a>
+          <a class="btn btn-wp" href="https://wa.me/5561986017644">💬 Abrir WhatsApp</a>
+        </div>
+
+        <div class="contact" style="margin-top:18px">
+          <div>
+            <div class="phone">(61) 98601-7644</div>
+            <div class="address">SCLN 403 BLOCO E — Ao lado do Supermercado Big Box<br>Asa Norte - Brasília - DF</div>
+          </div>
+          <div style="margin-left:auto;text-align:right">
+            <div style="font-weight:700;color:var(--gold2)">Formas de pagamento</div>
+            <div style="display:flex;gap:8px;margin-top:8px;justify-content:flex-end;align-items:center">
+              <div title="PIX" style="font-weight:800;padding:6px 10px;border-radius:8px;background:rgba(255,255,255,0.02)">PIX</div>
+              <div title="Mastercard" style="font-weight:800;padding:6px 10px;border-radius:8px;background:rgba(255,255,255,0.02)">MasterCard</div>
+              <div title="VISA" style="font-weight:800;padding:6px 10px;border-radius:8px;background:rgba(255,255,255,0.02)">VISA</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <aside class="card">
+        <img src="PROPAGANDA_TAG.jpg" alt="UltraChaves - propaganda" />
+      </aside>
+    </section>
+
+    <section>
+      <h2 style="color:var(--gold2)">Nossos Serviços</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Chaveiro 24h</h3>
+          <p>Cópia de chaves residenciais, comerciais e automotivas. Atendimento emergencial 24 horas.</p>
+        </div>
+        <div class="service">
+          <h3>Tags e chaveiros</h3>
+          <p>Programação e cópia de tags, chaveiros RFID e controle de acesso.</p>
+        </div>
+        <div class="service">
+          <h3>Baterias</h3>
+          <p>Baterias para relógios (CR2032), controles remotos e alarmes.</p>
+        </div>
+        <div class="service">
+          <h3>Manutenção e Programação</h3>
+          <p>Programação de chaves canivete, troca de capas, reparos em controles e sincronização.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 style="color:var(--gold2)">Direto no WhatsApp</h2>
+      <p style="margin:6px 0 12px">Para orçamento rápido e envio de localização, clique no botão abaixo:</p>
+      <a href="https://wa.me/5561986017644" class="btn btn-wp">💬 Enviar mensagem (61) 98601-7644</a>
+    </section>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+        <div>© <strong>UltraChaves</strong> — Chaveiro 24 Horas</div>
+        <div style="color:#cfc091">Endereço: SCLN 403 BLOCO E — Ao lado do Supermercado Big Box, Asa Norte - Brasília-DF</div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
